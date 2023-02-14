@@ -1,0 +1,548 @@
+:root {
+    --PaleBlue: hsl(225, 100%, 94%);
+    --BrightBlue: hsl(245, 75%, 52%);
+
+    --VeryPaleBlue: hsl(225, 100%, 98%);
+    --DesaturatedBlue: hsl(224, 23%, 55%);
+    --DarkBlue: hsl(223, 47%, 23%);
+}
+body {
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-size: 100% 45%;
+    background-repeat: no-repeat;
+    background-color: var(--PaleBlue);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+@media only screen and (max-width: 425px){
+
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 4rem 1.2rem 4rem 1.2rem;
+        background: var(--VeryPaleBlue);
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+
+    .container img {
+        max-width: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    .container h1 {
+        color: var(--DarkBlue);
+        font-size: 20px;
+        font-weight: 900;
+        text-align: center;
+        margin: 1.5rem auto;
+    }
+
+    .container p {
+        color: var(--DesaturatedBlue);
+        font-weight: 500;
+        text-align: center;
+        margin: 0 2.2rem 1rem 2.2rem;
+        line-height: 1.5em;
+    }
+
+    .plan-container {
+        display: flex;
+        background-color: var(--VeryPaleBlue);
+        margin: 0 1.5rem;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        border-radius: 10px;
+        height: 4.8rem;
+        
+    }
+    .price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .plan-icon {
+        width: 50px;
+        height: 50px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+
+    .plan-name {
+        font-weight: 900;
+        color: var(--DarkBlue);
+        margin-bottom: 0.5em;
+    }
+
+    .plan-description {
+        gap: 5rem;
+        font-weight: 700;
+        color: var(--DesaturatedBlue);
+    }
+
+    .plan-link {
+        margin-left: 2.8rem; 
+        color: var(--DarkBlue);
+        font-weight: 700;
+    }
+
+    .payment {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+
+    .payment-link {
+        color: var(--VeryPaleBlue);
+        background-color: var(--BrightBlue);
+        text-decoration: none;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 900;
+        margin-top: 1.5rem;
+        padding: 1.2rem 4.5rem;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    }
+
+    .payment-cancel {
+        text-align: center;
+        text-decoration: none;
+        padding: 2rem 1.3rem 1.3rem 1.3rem;
+        color: var(--DesaturatedBlue);
+        font-weight: 700;
+    }
+
+    
+
+
+}
+    
+@media screen and (min-width: 425px){
+
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 2.5rem 10rem;
+        background: var(--VeryPaleBlue);
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+
+    .container img {
+        max-width: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    .container h1 {
+        color: var(--DarkBlue);
+        font-size: 20px;
+        font-weight: 900;
+        text-align: center;
+        margin: 1.5rem auto;
+    }
+
+    .container p {
+        color: var(--DesaturatedBlue);
+        font-weight: 500;
+        text-align: center;
+        margin: 0 2.2rem 1rem 2.2rem;
+        line-height: 1.5em;
+    }
+
+    .plan-container {
+        display: flex;
+        background-color: var(--VeryPaleBlue);
+        margin: 0 1.5rem;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        border-radius: 10px;
+        height: 4.8rem;
+        
+    }
+    .price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .plan-icon {
+        width: 50px;
+        height: 50px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+
+    .plan-name {
+        font-weight: 900;
+        color: var(--DarkBlue);
+        margin-bottom: 0.5em;
+    }
+
+    .plan-description {
+        gap: 5rem;
+        font-weight: 700;
+        color: var(--DesaturatedBlue);
+    }
+
+    .plan-link {
+        margin-left: 6.7rem; 
+        color: var(--BrightBlue);
+        font-weight: 700;
+    }
+
+    .plan-link:visited{
+        color: var(--BrightBlue);
+        font-weight: 700;
+    }
+
+    .payment {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+
+    .payment-link {
+        color: var(--VeryPaleBlue);
+        background-color: var(--BrightBlue);
+        text-decoration: none;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 900;
+        margin-top: 1.5rem;
+        padding: 1.2rem 4.5rem;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    }
+
+    .payment-link:hover{
+        transition: 1s;
+        margin-top: 1rem;
+        padding: 1.7rem 4rem;
+        background-color: hsl(245, 95%, 52%);
+    }
+
+    .payment-link:not(:hover){
+        transition: 1s;
+    }
+
+    .payment-cancel {
+        font-size: 14px;
+        text-align: center;
+        text-decoration: none;
+        margin: 2rem auto;
+        color: var(--DesaturatedBlue);
+        font-weight: 700;
+        width: 7em;
+    }
+
+    .payment-cancel:hover{
+        transition: 0.5s;
+        color: hsl(224, 11%, 11%);
+    }
+
+    .payment-cancel:not(:hover){
+        transition: 0.5s;
+    }
+
+    
+
+
+}
+
+@media screen and (width: 1024px){
+
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 26rem;
+        background: var(--VeryPaleBlue);
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+
+    .container img {
+        max-width: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    .container h1 {
+        color: var(--DarkBlue);
+        font-size: 20px;
+        font-weight: 900;
+        text-align: center;
+        margin: 1.5rem auto;
+    }
+
+    .container p {
+        color: var(--DesaturatedBlue);
+        font-weight: 500;
+        text-align: center;
+        margin: 0 2.2rem 1rem 2.2rem;
+        line-height: 1.5em;
+    }
+
+    .plan-container {
+        display: flex;
+        background-color: var(--VeryPaleBlue);
+        margin: 0 1.5rem;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        border-radius: 10px;
+        height: 4.8rem;
+        
+    }
+    .price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .plan-icon {
+        width: 50px;
+        height: 50px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+
+    .plan-name {
+        font-weight: 900;
+        color: var(--DarkBlue);
+        margin-bottom: 0.5em;
+    }
+
+    .plan-description {
+        gap: 5rem;
+        font-weight: 700;
+        color: var(--DesaturatedBlue);
+    }
+
+    .plan-link {
+        margin-left: 6.7rem; 
+        color: var(--BrightBlue);
+        font-weight: 700;
+    }
+
+    .plan-link:visited{
+        color: var(--BrightBlue);
+        font-weight: 700;
+    }
+
+    .payment {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+
+    .payment-link {
+        color: var(--VeryPaleBlue);
+        background-color: var(--BrightBlue);
+        text-decoration: none;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 900;
+        margin-top: 1.5rem;
+        padding: 1.2rem 4.5rem;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    }
+
+    .payment-link:hover{
+        transition: 1s;
+        margin-top: 1rem;
+        padding: 1.7rem 4rem;
+        background-color: hsl(245, 95%, 52%);
+    }
+
+    .payment-link:not(:hover){
+        transition: 1s;
+    }
+
+    .payment-cancel {
+        font-size: 14px;
+        text-align: center;
+        text-decoration: none;
+        margin: 2rem auto;
+        color: var(--DesaturatedBlue);
+        font-weight: 700;
+        width: 7em;
+    }
+
+    .payment-cancel:hover{
+        transition: 0.5s;
+        color: hsl(224, 11%, 11%);
+    }
+
+    .payment-cancel:not(:hover){
+        transition: 0.5s;
+    }
+
+    
+
+
+}
+
+@media only screen and (min-width: 1024px){
+
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 2.5rem 32rem;
+        background: var(--VeryPaleBlue);
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+
+    .container img {
+        max-width: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    .container h1 {
+        color: var(--DarkBlue);
+        font-size: 20px;
+        font-weight: 900;
+        text-align: center;
+        margin: 1.5rem auto;
+    }
+
+    .container p {
+        color: var(--DesaturatedBlue);
+        font-weight: 500;
+        text-align: center;
+        margin: 0 2.2rem 1rem 2.2rem;
+        line-height: 1.5em;
+    }
+
+    .plan-container {
+        display: flex;
+        background-color: var(--VeryPaleBlue);
+        margin: 0 1.5rem;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        border-radius: 10px;
+        height: 4.8rem;
+        
+    }
+    .price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .plan-icon {
+        width: 50px;
+        height: 50px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+
+    .plan-name {
+        font-weight: 900;
+        color: var(--DarkBlue);
+        margin-bottom: 0.5em;
+    }
+
+    .plan-description {
+        gap: 5rem;
+        font-weight: 700;
+        color: var(--DesaturatedBlue);
+    }
+
+    .plan-link {
+        margin-left: 6.7rem; 
+        color: var(--BrightBlue);
+        font-weight: 700;
+    }
+
+    .plan-link:visited{
+        color: var(--BrightBlue);
+        font-weight: 700;
+    }
+
+    .payment {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+
+    .payment-link {
+        color: var(--VeryPaleBlue);
+        background-color: var(--BrightBlue);
+        text-decoration: none;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 900;
+        margin-top: 1.5rem;
+        padding: 1.2rem 4.5rem;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    }
+
+    .payment-link:hover{
+        transition: 1s;
+        margin-top: 1rem;
+        padding: 1.7rem 4rem;
+        background-color: hsl(245, 95%, 52%);
+    }
+
+    .payment-link:not(:hover){
+        transition: 1s;
+    }
+
+    .payment-cancel {
+        font-size: 14px;
+        text-align: center;
+        text-decoration: none;
+        margin: 2rem auto;
+        color: var(--DesaturatedBlue);
+        font-weight: 700;
+        width: 7em;
+    }
+
+    .payment-cancel:hover{
+        transition: 0.5s;
+        color: hsl(224, 11%, 11%);
+    }
+
+    .payment-cancel:not(:hover){
+        transition: 0.5s;
+    }
+
+    
+
+
+}
+
+
+
+
+footer { 
+    font-size: 11px; text-align: center; 
+}
+
+footer a { 
+    color: hsl(228, 45%, 44%); 
+}
